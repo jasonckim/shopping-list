@@ -1,0 +1,17 @@
+
+
+<h2 style=text-align:center;>Welcome to your interactive shopping list!</h2>
+	<div class="indexbutton">
+		<%= link_to "Add a new item", new_shop_path, :class => "btn btn-success" %>
+	</div>
+
+	<div class="index">
+		<h3>Items currently on your shopping list:</h3>
+<% @shops.each do |shop| %>
+    <li>
+    	<%= link_to shop.title, shop_path(shop.id), :class => "btn btn-primary"%>
+    	<%= link_to "edit", edit_shop_path(shop[:id]), :class => "btn btn-info" %>
+    	<%= link_to "delete", shop, method: :delete, data: { confirm: "You sure?" }, :class => "btn btn-danger btn-xs" %>
+    </li>
+<% end %>
+</div>

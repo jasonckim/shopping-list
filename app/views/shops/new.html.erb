@@ -1,0 +1,22 @@
+<div class="new">
+
+<h1>Add a new item to your list</h1>
+<%= form_for @shop do |f| %>
+
+  <%= label_tag(:title, "Items:") %>
+  <%= f.text_field :title %></br>
+
+  <%= label_tag(:description, "Description:") %> 
+  <%= f.text_area :description %></br>
+
+  <%= label_tag(:quantity, "Quantity:") %> 
+  <%= f.text_area :quantity %></br>
+
+  <%= f.submit "Create", :class => "btn btn-info" %>
+<% end %>
+
+<br />
+
+<%= link_to "Back To Shopping List", shops_path, :class => "btn btn-success"%>
+
+</div>
