@@ -18,6 +18,14 @@ body{
 	background-size: cover;
 }
 
+h2{
+	font-family: Papyrus, fantasy;
+}
+
+h3{
+	font-family: Papyrus, fantasy;
+}
+
 .indexbutton{
 	margin-top: 30px;
 	text-align: center;
@@ -32,7 +40,7 @@ body{
 
 .show{
 	text-align: center;
-	font-family: Georgia, Times, "Times New Roman", serif;
+	font-family: Papyrus, fantasy;
 	font-size: 24px;
 	color:black;
 }

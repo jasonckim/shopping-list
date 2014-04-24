@@ -1,6 +1,4 @@
-
-
-<h2 style=text-align:center;>Welcome to your interactive shopping list!</h2>
+<h2 style=text-align:center;>Welcome to the interactive shopping list!</h2>
 	<div class="indexbutton">
 		<%= link_to "Add a new item", new_shop_path, :class => "btn btn-success" %>
 	</div>
@@ -11,7 +9,7 @@
     <li>
     	<%= link_to shop.title, shop_path(shop.id), :class => "btn btn-primary"%>
     	<%= link_to "edit", edit_shop_path(shop[:id]), :class => "btn btn-info" %>
-    	<%= link_to "delete", shop, method: :delete, data: { confirm: "You sure?" }, :class => "btn btn-danger btn-xs" %>
+    	<%= link_to "delete", shop, method: :delete, data: { confirm: "You sure?" }, :class => "btn btn-danger" %>
     </li>
 <% end %>
 </div>

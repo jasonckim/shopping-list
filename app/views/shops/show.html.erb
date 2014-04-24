@@ -1,9 +1,9 @@
 <div class="show">
 
-<h1>Items currently on your list:</h1>
-	<p>Items: <%= @shop.title%></p>
-	<p>Description: <%= @shop.description%></p>
-	<p>Quantity: <%= @shop.quantity%></p>
+<h2>Items to buy:</h2>
+	<p><strong>Items:</strong> <%= @shop.title%></p>
+	<p><strong>Description:</strong> <%= @shop.description%></p>
+	<p><strong>Quantity:</strong> <%= @shop.quantity%></p>
 
 <%= link_to "Back To Shopping List", shops_path, :class => "btn btn-success"%>
 
